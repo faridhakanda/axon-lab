@@ -12,11 +12,11 @@ export default function Home() {
       </p>
       <div className="flex rounded-md bg-slate-100">
         <Image src="/twitter.png" alt="twitter" height="48" width="48" />
-        <h1 className="p-3 text-slate-900">Share on X(twitter)</h1>
+        <h1 className="p-3 text-slate-900">Following on X(twitter)</h1>
       </div>
       <div className="flex rounded-md bg-slate-100">
         <Image src="/telegram.png" alt="twitter" height="48" width="48" />
-        <h1 className="p-3 text-slate-900">Share on Telegram</h1>
+        <h1 className="p-3 text-slate-900">Following on Telegram</h1>
       </div>
       <div className="flex rounded-md bg-slate-100">
         <Image src="/github.png" alt="twitter" height="48" width="48" />
