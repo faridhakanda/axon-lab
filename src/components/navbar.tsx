@@ -4,11 +4,11 @@ import Desktop from './desktop'
 
 const Header = () => {
   return (
-    <div className="block sm:mt-8 md:mt-8">
+    <div className="block">
         <div className="sm:hidden md:hidden lg:visible xl:visible 2xl:visible">
             <Desktop />
         </div>
-        <div className="sm:-mt-8 md:-mt-8">
+        <div className="sm:visible md:visible lg:hidden xl:hidden 2xl:hidden">
             <Mobile />
         </div>
     </div>
