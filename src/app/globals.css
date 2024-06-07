@@ -31,3 +31,23 @@ body {
     text-wrap: balance;
   }
 }
+
+#sideNavbar {
+  z-index: 10;
+  top: 10px;
+  display: block;
+  flex-direction: column;
+  float: right;
+  padding: 2px;
+  width: 30vh;
+  height: 40vh;
+  box-sizing: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+#sideNavList {
+  flex-direction: column;
+  display: flex;
+  padding: 10px;
+  float: left;
+  text-align: start;
+
+}

@@ -15,11 +15,17 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) 
+
+{
+  // if (error) return <div>Failed to load</div>;
+  
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        <div className="fixed w-full">
+          <Navbar />
+        </div>
         {children}
         <Footer />
         </body>

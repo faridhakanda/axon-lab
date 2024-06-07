@@ -1,40 +1,18 @@
 import React from 'react'
+import Mobile from './mobile'
+import Desktop from './desktop'
 
-
-const Navbar = () => {
-    const allLinks = [
-        {
-            id: 1,
-            title: 'Home',
-            url: '/'
-        },
-        {
-            id: 2,
-            title: 'AboutMe',
-            url: '/about'
-        },
-        {
-            id: 3,
-            title: 'Contact',
-            url: '/contact'
-        }
-    ];
+const Header = () => {
   return (
-    <div className="flex justify-around bg-slate-300 p-3 text-slate-950">
-        <div>
-            <h1>AxonLab</h1>
+    <div className="block sm:-mt-6 md:-mt-6">
+        <div className="sm:invisible md:invisible lg:visible xl:visible 2xl:visible">
+            <Desktop />
         </div>
-        <div className="flex gap-3">
-            {
-                allLinks.map((alllink) => {
-                    return (
-                        <h1 key={alllink.id}>{alllink.title}</h1>
-                    )
-                })
-            }
+        <div className="sm:-mt-8 md:-mt-8">
+            <Mobile />
         </div>
     </div>
   )
 }
 
-export default Navbar
+export default Header
