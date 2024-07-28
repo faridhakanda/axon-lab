@@ -4,8 +4,15 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+
 const Mobile = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isHeader, setIsHeader] = useState(false);
+
+    const close = () => {
+        setIsHeader(!isHeader);
+        setIsOpen(false);
+    }
     const navigationlink = [
         {
             id: 1,
@@ -37,7 +44,7 @@ const Mobile = () => {
     <div className="">
         <div className="sm:flex md:flex lg:hidden xl:hidden 2xl:hidden p-3 w-full bg-indigo-500 justify-between">
             <div className="pl-4">
-                <Link href="/">AxonLab</Link>
+                <Link onClick={close} href="/">AxonLab</Link>
             </div>
             <div className="pr-4" onClick={() => setIsOpen(!isOpen)}>
                 {!isOpen ? <Image src="/menu.png" alt="hamburger" width="32" height="32" /> : <Image src="/cross.png" alt="cross" width="32" height="32" />}
