@@ -71,7 +71,7 @@ const Mobile = () => {
         <div  onClick={appears} className="bg-lime-300 ">
             <Appear />
         </div>
-        <div className={`hover:${appears} bg-zinc-500`}>
+        <div className={`hover:${appears} h-24 bg-zinc-500`}>
             <Appear />
         </div>
         
