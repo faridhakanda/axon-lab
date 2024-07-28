@@ -31,7 +31,7 @@ const Desktop = () => {
     ];
 
   return (
-    <div className="bg-indigo-500 flex justify-around p-4">
+    <div className="bg-slate-100 text-slate-950 shadow-xl flex justify-around p-4">
         <div>
             <Link href="/">AxonLab</Link>
         </div>

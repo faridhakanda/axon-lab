@@ -42,7 +42,7 @@ const Mobile = () => {
     ];
   return (
     <div className="">
-        <div className="sm:flex md:flex lg:hidden xl:hidden 2xl:hidden p-3 w-full bg-indigo-500 justify-between">
+        <div className="sm:flex md:flex lg:hidden xl:hidden 2xl:hidden p-3 w-full bg-slate-100 text-slate-950 shadow-xl justify-between">
             <div className="pl-4">
                 <Link onClick={close} href="/">AxonLab</Link>
             </div>
@@ -50,7 +50,7 @@ const Mobile = () => {
                 {!isOpen ? <Image src="/menu.png" alt="hamburger" width="32" height="32" /> : <Image src="/cross.png" alt="cross" width="32" height="32" />}
             </div>
         </div>
-        <div className={`bg-indigo-400 w-48 h-56 sm:visible md:visible lg:invisible xl:invisible 2xl:invisible space-y-2 p-4 float-right ${!isOpen ? "opacity-0" : "opacity-100"}`}>
+        <div className={`bg-slate-100 text-slate-950 w-48 h-56 sm:visible md:visible lg:invisible xl:invisible 2xl:invisible space-y-2 p-4 float-right ${!isOpen ? "opacity-0" : "opacity-100"}`}>
             {
                 navigationlink.map((navlist) => {
                     return (
