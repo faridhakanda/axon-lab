@@ -50,15 +50,20 @@ const Mobile = () => {
                 {!isOpen ? <Image src="/menu.png" alt="hamburger" width="32" height="32" /> : <Image src="/cross.png" alt="cross" width="32" height="32" />}
             </div>
         </div>
-        <div className={`bg-slate-100 text-slate-950 w-48 h-56 sm:visible md:visible lg:invisible xl:invisible 2xl:invisible space-y-2 p-4 float-right ${!isOpen ? "opacity-0" : "opacity-100"}`}>
-            {
-                navigationlink.map((navlist) => {
-                    return (
-                        <Link onClick={() => setIsOpen(!isOpen)} className="block" key={navlist.id} href={navlist.url}>{navlist.title}</Link>
-                    )
-                })
-            }
+        <div>
+            {isOpen && (
+                <div className={`bg-slate-100 text-slate-950 w-48 h-56 sm:visible md:visible lg:invisible xl:invisible 2xl:invisible space-y-2 p-4 float-right ${!isOpen ? "opacity-0" : "opacity-100"}`}>
+                {
+                    navigationlink.map((navlist) => {
+                        return (
+                            <Link onClick={() => setIsOpen(!isOpen)} className="block" key={navlist.id} href={navlist.url}>{navlist.title}</Link>
+                        )
+                    })
+                }
+            </div>
+            )}
         </div>
+        
     </div>
     
   )
