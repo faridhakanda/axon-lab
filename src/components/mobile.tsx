@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import Appear from './appear'
 
 
 const Mobile = () => {
@@ -11,6 +12,10 @@ const Mobile = () => {
 
     const close = () => {
         setIsHeader(!isHeader);
+        setIsOpen(false);
+    }
+
+    const appears = () => {
         setIsOpen(false);
     }
     const navigationlink = [
@@ -63,6 +68,13 @@ const Mobile = () => {
             </div>
             )}
         </div>
+        <div  onClick={appears} className="bg-lime-300 ">
+            <Appear />
+        </div>
+        <div className={`hover:${appears} bg-zinc-500`}>
+            <Appear />
+        </div>
+        
         
     </div>
     
