@@ -6,6 +6,7 @@ export default function Home() {
       <h1 className="text-xl bg-sky-400 text-slate-950 rounded-md p-2">Axon Lab</h1>
       <h1 className="text-2xl">এক্সন ল্যাব</h1>
       <h1>Farid Akanda</h1>
+      <h1>Axon Lab is web application for me!</h1>
       <p>My interest is make software startup with AI and Big Data!</p>
       <h2>Computer Programmer and Web Developer</h2>
       <p>Orbit lab is one of the newest scientific study center 
